@@ -1,16 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { assets, NavItems } from '../assets/assets'
 import { Link, useLocation } from 'react-router-dom'
 
 const Navbar = () => {
     const location = useLocation()
+    
+    const [MenuOpen, setMenuOpen] = useState(false);
+    const toggleMenu = ()=> setMenuOpen(!MenuOpen)
      
   return (
     <nav>
-      <div className='w-full flex items-center justify-between bg-green-500    fixed px-4 md:px-16 lg:px-24 xl:px-32 transition-all duration-500 z-50 text-white'>
+      <div className='w-full flex items-center justify-between bg-transparent    fixed px-4 md:px-16 lg:px-24 xl:px-32 transition-all duration-500 z-50 text-white'>
         {/* logo */}
         <div className=' flex items-center justify-center gap-1 mt-4'>
-  <img src={assets.Logo} alt="" className='w-24 h-20 mt-2'/>
+  <img src={assets.Logo} alt="" className='w-20 h-20 mt-2'/>
    <div>
 <h1 className='font-medium '>Veluxe Rentals </h1>
    </div>
@@ -33,16 +36,49 @@ const Navbar = () => {
               {item.name}
             </span>
              {/* underline */}
-         <span className={`absolute bottom-0 left-0 h-[2px] w-full rounded-full transition-all duration-300 ${isActive ? "bg-" : "bg-transparent group-hover:bg-red-400"} `}>
+         <span className={`absolute bottom-0 left-0 h-[3px] w-full rounded-full transition-all duration-300 ${isActive ? "bg-linear-to-l bg-pink-600 to-purple-600" : "bg-transparent group-hover:bg-red-400"} `}>
 
          </span>
           </Link>
 )})}
-      </div>
- 
+ </div>
+  
+  {/* Sign In / Sign Up */}
+   <div className=" hidden items-center gap-4  md:flex mr-7">
+    <Link to="/signin">
+    <button className="text-sm font-medium bg-white px-4 py-2  shadow-[0px_0px_30px_7px] hover:shadow-[0px_0px_30px_14px] text-black rounded-full transition duration-300 hover:bg-slate-100 shadow-white/50 hover:shadow-white/50 "> SignIn</button>
+    </Link>
+    <Link to='/login'>
+    <button  className="text-sm font-medium bg-white px-5 py-2  shadow-[0px_0px_30px_7px] hover:shadow-[0px_0px_30px_14px] text-black rounded-full transition duration-300 hover:bg-slate-100 shadow-white/50 hover:shadow-white/50 "> LogIn</button>
+    </Link>
+  
+   </div>
 
 
 
+ {/* mobile menu */}
+<div className='block md:hidden'>
+<img src={MenuOpen ? assets.close_Icon : assets.menuBar} alt=""  className='w-8 h-8 ' onClick={toggleMenu}/>
+</div>
+{/* mobile menu  */}
+
+{MenuOpen && (
+  <div
+    className="fixed right-0 bottom-0 w-[50%] top-20 flex flex-col items-center justify-start 
+    space-y-8 z-50 bg-transparent text-white  backdrop-blur-sm md:hidden transition-all duration-500"
+  >
+    {NavItems.map((item) => (
+      <Link
+        key={item.name}
+        to={item.path}
+        onClick={toggleMenu} // closes menu after click
+        className="text-2xl font-medium hover:text-yellow-400 transition"
+      >
+        {item.name}
+      </Link>
+    ))}
+  </div>
+)}
 
       </div>
     </nav>
