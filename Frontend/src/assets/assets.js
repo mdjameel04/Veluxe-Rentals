@@ -15,7 +15,7 @@ export const NavItems =[
     {name : "Home",path: "/" },
     {name : "CarBooking",path: "/booking" },
     {name : "Fleet",path: "/fleet" },
-    {name : "Contact US",path: "/Contact" },
-    {name : "About Us",path: "/about" },
+    {name : "Contact",path: "/Contact" },
+    {name : "About Us",path: "/about" }
 
 ]
