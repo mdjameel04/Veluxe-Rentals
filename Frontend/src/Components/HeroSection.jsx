@@ -47,6 +47,11 @@ t1.fromTo(textref.current,{ opacity:0, y:40},
         </p>
         <button className='relative mt-8 px-8 py-3 overflow-hidden rounded-xl border border-white/30 text-white backdrop-blur-md transition-all duration-500 ease-in-out group '>
         <span className='relative z-10'> Discover More</span>
+          <img
+    src={assets.right}
+    alt=""
+    className="relative z-10 w-6 h-4 opacity-0 translate-x-4 transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:translate-x-1 ml-10"
+  />
         <span className='absolute inset-0 bg-gradient-to-r from-pink-500/60 to-purple-600/60 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500 ease-in-out'></span>
         </button>
 
