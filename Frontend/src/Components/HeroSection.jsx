@@ -39,19 +39,14 @@ t1.fromTo(textref.current,{ opacity:0, y:40},
       <div className="absolute inset-0 bg-black/25"></div>
 
       <div className="relative z-10 flex flex-col justify-center items-center h-full text-center text-white px-6">
-        <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold uppercase tracking-wide"ref={textref} >
+        <h1 className=" font-oswald  text-4xl sm:text-5xl md:text-7xl font-bold uppercase tracking-wide"ref={textref} >
           Veluxe Rentals
         </h1>
-        <p className="mt-4 text-base sm:text-lg md:text-xl text-gray-300 max-w-[90%]" ref={subText}>
+        <p className="font-outfit mt-4 text-base sm:text-lg md:text-xl text-gray-300 max-w-[90%]" ref={subText}>
         
         </p>
         <button className='relative mt-8 px-8 py-3 overflow-hidden rounded-xl border border-white/30 text-white backdrop-blur-md transition-all duration-500 ease-in-out group '>
         <span className='relative z-10'> Discover More</span>
-          <img
-    src={assets.right}
-    alt=""
-    className="relative z-10 w-6 h-4 opacity-0 translate-x-4 transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:translate-x-1 ml-10"
-  />
         <span className='absolute inset-0 bg-gradient-to-r from-pink-500/60 to-purple-600/60 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500 ease-in-out'></span>
         </button>
 
