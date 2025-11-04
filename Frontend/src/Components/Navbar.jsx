@@ -1,8 +1,21 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { assets, NavItems } from '../assets/assets'
 import { Link, useLocation } from 'react-router-dom'
 
 const Navbar = () => {
+
+const [isScrolled, setisScrolled] = useState(false);
+
+useEffect(()=>{
+
+  const HandelScrolled = ()=>{
+    setisScrolled(window.scrollY>10)
+  }
+  window.addEventListener("scroll", HandelScrolled);
+  return ()=> window.removeEventListener("scroll", HandelScrolled)
+},[])
+
+
     const location = useLocation()
     
     const [MenuOpen, setMenuOpen] = useState(false);
@@ -10,7 +23,7 @@ const Navbar = () => {
      
   return (
     <nav>
-      <div className='w-full flex items-center justify-between bg-transparent  lg:px-16  fixed  transition-all duration-500 z-50 text-white'>
+      <div className={`w-full flex items-center justify-between   lg:px-16  fixed  transition-all duration-500 z-50 ${isScrolled? "bg-gray-400 text-black ":"bg-transparent text-white"}`}     >
         {/* logo */}
         <div className=' flex items-center justify-center gap-1 '>
   <img src={assets.Logo} alt="" className='w-20 h-20 mt-2'/>

@@ -47,7 +47,7 @@ t1.fromTo(textref.current,{ opacity:0, y:40},
         </p>
         <button className='relative mt-8 px-8 py-3 overflow-hidden rounded-xl border border-white/30 text-white backdrop-blur-md transition-all duration-500 ease-in-out group '>
         <span className='relative z-10'> Discover More</span>
-        <span className='absolute inset-0 bg-gradient-to-r from-pink-500/60 to-purple-600/60 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500 ease-in-out'></span>
+        <span className='absolute inset-0 bg-linear-to-r from-pink-500/60 to-purple-600/60 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500 ease-in-out'></span>
         </button>
 
       </div> 

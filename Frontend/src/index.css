@@ -6,6 +6,9 @@
   --font-oswald: "Oswald", sans-serif;
   
 }
+.slider-track {
+  transform: translateX(var(--slide-position, 0%));
+}
 
 ::-webkit-scrollbar {
   display: none;

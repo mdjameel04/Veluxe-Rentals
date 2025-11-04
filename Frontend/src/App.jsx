@@ -7,8 +7,8 @@ import Models from './Components/Models'
 const App = () => {
   return (
     <div>
-      <Navbar/>
-      <HeroSection/>
+      {/* <Navbar/>
+      <HeroSection/> */}
       <Models/>
     </div>
   )
