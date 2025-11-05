@@ -6,7 +6,7 @@ import right from './Right-arrow.png'
 import car_img1 from './car-img1.webp'
 import car_img2 from './Car-img2.webp'
 import car_img3 from './car-img4.png'
-
+import rightSide_img from './Right-img.webp'
 
 export const assets = {
     video1,
@@ -16,7 +16,8 @@ export const assets = {
     right,
     car_img1,
     car_img2,
-    car_img3
+    car_img3,
+    rightSide_img
 
 }
 

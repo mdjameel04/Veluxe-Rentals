@@ -23,7 +23,7 @@ useEffect(()=>{
      
   return (
     <nav>
-      <div className={`w-full flex items-center justify-between   lg:px-16  fixed  transition-all duration-500 z-50 ${isScrolled? "bg-gray-400 text-black ":"bg-transparent text-white"}`}     >
+      <div className={`w-full flex items-center justify-between   lg:px-16  relative  transition-all duration-500 z-50 ${isScrolled? "bg-gray-400 text-black ":"bg-black text-white"}`}     >
         {/* logo */}
         <div className=' flex items-center justify-center gap-1 '>
   <img src={assets.Logo} alt="" className='w-20 h-20 mt-2'/>

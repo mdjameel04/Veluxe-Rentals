@@ -2,6 +2,8 @@ import gsap from 'gsap'
 import { assets } from '../assets/assets'
 import { TextPlugin } from 'gsap/TextPlugin'
 import { useEffect, useRef } from 'react'
+import Models from '../Components/Models'
+
 
 gsap.registerPlugin(TextPlugin)
 
@@ -25,6 +27,7 @@ t1.fromTo(textref.current,{ opacity:0, y:40},
 },[])
 
   return (
+    <section>
     <div className="relative w-full h-screen overflow-hidden">
       <video
         autoPlay
@@ -52,7 +55,10 @@ t1.fromTo(textref.current,{ opacity:0, y:40},
 
       </div> 
     </div>
+   {/* <Models/> */}
+    </section>
   )
 }
 
 export default HeroSection
+

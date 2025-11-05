@@ -22,12 +22,12 @@ const Models = () => {
 
   return (
     <section>
-      <div className="mt-4 flex items-center bg-[#f5f5f5]">
-        <h1 className="text-2xl ml-4 font-bold">Models</h1>
+      <div className="mt-6 flex items-center ">
+        <h1 className="text-2xl md:text-6xl mt-8  ml-[5%] font-bold">Models</h1>
       </div>
 
       {/* Slides */}
-      <div className="w-full overflow-hidden relative">
+      <div className="w-full overflow-hidden relative mt-10">
         <div
           className="flex slider-track transition-transform duration-700 ease-in-out"
           style={{ "--slide-position": `-${count * 100}%` }}
