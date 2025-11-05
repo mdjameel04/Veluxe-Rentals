@@ -53,9 +53,9 @@ t1.fromTo(textref.current,{ opacity:0, y:40},
         <span className='absolute inset-0 bg-linear-to-r from-pink-500/60 to-purple-600/60 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500 ease-in-out'></span>
         </button>
 
-      </div> 
-    </div>
-   {/* <Models/> */}
+      </div>  
+     </div> 
+    <Models/>
     </section>
   )
 }

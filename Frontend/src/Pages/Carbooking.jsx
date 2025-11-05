@@ -3,7 +3,8 @@ import { assets } from '../assets/assets'
 
 const Carbooking = () => {
   return (
-    <section className='w-full bg-black text-white py-16'>
+      <section>
+    <div className='w-full bg-black text-white py-4'>
       <div className='  flex flex-col md:flex-row items-center justify-between px-6'>
 
         {/* LEFT - Text Section */}
@@ -23,15 +24,59 @@ const Carbooking = () => {
         </div>
 
         {/* RIGHT - Image Section */}
-        <div className='w-full md:w-1/2 flex items-center justify-center mt-10 md:mt-0'>
+        <div className='w-full md:w-1/2 flex items-center justify-center mt-10 md:mt-0 '>
           <img
             src={assets.rightSide_img}
             alt='Luxury Car'
-            className='w-full   rounded-2xl shadow-lg'
+            className='w-full   rounded-2xl shadow-lg '
           />
         </div>
-
       </div>
+    </div>
+
+  {/* bookings */}
+
+   <div className='w-full bg-white py-10'>
+    <div className='max-w-6xl mx-auto px-4'>
+{/* title */}
+    <h1 className='text-2xl font-bold text-gray-800 text-center mb-6 md:text-3xl '>Book your suitable car</h1>
+  {/* Filters */}
+   <div className='flex flex-col md:flex-row items-center justify-center gap-4'>
+{/* Dropdown */}
+
+  <select className='px-4 py-2 w-60 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-indigo-500'>
+    <option value={""}> Select car</option>
+     <option value="low-high">Low to High</option>
+        <option value="high-low">High to Low</option>
+ </select>
+
+ {/* Brand Dropdown */}
+      <select
+        className="px-4 py-2 w-60 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-indigo-500"
+      >
+        <option value="">Brand</option>
+        <option value="audi">Audi</option>
+        <option value="bmw">BMW</option>
+        <option value="lamborghini">Lamborghini</option>
+      </select>
+
+      {/* Type Dropdown */}
+      <select
+        className="px-4 py-2 w-60 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-indigo-500"
+      >
+        <option value="">Type</option>
+        <option value="suv">SUV</option>
+        <option value="sedan">Sedan</option>
+        <option value="sports">Sports</option>
+        <option value="sports">Electric</option>
+      </select>
+
+   </div>
+
+    </div>
+   </div>
+
+
     </section>
   )
 }
