@@ -55,7 +55,7 @@ t1.fromTo(textref.current,{ opacity:0, y:40},
 
       </div>  
      </div> 
-    {/* <Models/> */}
+    <Models/>
     </section>
   )
 }
