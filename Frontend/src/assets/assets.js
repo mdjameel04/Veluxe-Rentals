@@ -46,7 +46,7 @@ export const cars =[
 
     {id:6, name:"Bmw 3", img:"img6", brand:"bmw", model:"Sedans", fuel:"petrol"},
     {id:7, name:"Bmw 7", img:"img7", brand:"bmw", model:"Sedans", fuel:"petrol"},
-    {id:8, name:"Bmw x3", img:"img8",brand:"bmw", model:"Suv", fuel:"Disel"},
+    {id:8, name:"Bmw x3", img:"img8",brand:"bmw", model:"Suvs", fuel:"Disel"},
     {id:9, name:"Bmw m2", img:"img9", brand:"bmw",model:"Sports", fuel:"petrol"},
 
     {id:10, name:"Lamborghini Huracán", img:"img10", brand:"Lamborghini", model:"Sports", fuel:"petrol"},
