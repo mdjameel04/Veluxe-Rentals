@@ -11,14 +11,15 @@ const app = express()
  app.use(cors())
 
 // Router
-app.use('/', (req,res)=>{
-    res.send("server is running successfully 🚗 ")
-} )
-app.use('api/users',userRoutes )
+app.use('/api/users',userRoutes )
+
+app.use("/", (req, res) => {
+  res.send("Server running successfully 🚗");
+});
 
  //connection
  connectedDb()
 
 const PORT =process.env.PORT || 5000;
 
-app.listen(PORT, ()=> console.log(`Server is running sucessfully on port ${PORT}`))
+app.listen(PORT, ()=> console.log(`Server is running successfully on port ${PORT}`))
