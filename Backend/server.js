@@ -1,10 +1,8 @@
 import express  from "express";
 import cors from 'cors';
 import dotenv from 'dotenv';
-import jwt from "jsonwebtoken";
-import bcryptjs from 'bcryptjs'
 import connectedDb from "./config/db.js";
-
+import userRoutes from "./routes/userRoutes.js";
 dotenv.config();
 const app = express()
 
@@ -12,8 +10,13 @@ const app = express()
  app.use(express.json())
  app.use(cors())
 
+// Router
+app.use('/', (req,res)=>{
+    res.send("server is running successfully 🚗 ")
+} )
+app.use('api/users',userRoutes )
 
- //
+ //connection
  connectedDb()
 
 const PORT =process.env.PORT || 5000;
