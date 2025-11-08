@@ -4,8 +4,9 @@ import dotenv from 'dotenv';
 import connectedDb from "./config/db.js";
 import userRoutes from "./routes/userRoutes.js";
 import carRoutes from "./routes/carRoutes.js";
-
+import bookingRoutes from './routes/bookingRoutes.js'
 dotenv.config();
+
 const app = express()
 
 //middleware
@@ -16,7 +17,7 @@ const app = express()
 app.use('/api/users',userRoutes )
 app.use('/api/users', userRoutes);
 app.use('/api/cars', carRoutes);
-
+app.use("/api/bookings", bookingRoutes);
 
 app.use("/", (req, res) => {
   res.send("Server running successfully 🚗");
