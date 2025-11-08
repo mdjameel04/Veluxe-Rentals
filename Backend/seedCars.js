@@ -8,20 +8,20 @@ dotenv.config()
 connectedDb()
 
 const cars = [
-  { name: "Audi a3", img: "img1", brand: "Audi", model: "Sedans", fuelType: "Petrol", pricePerDay: 120 },
-  { name: "Audi q2", img: "img2", brand: "Audi", model: "Suvs", fuelType: "Diesel", pricePerDay: 150 },
-  { name: "Audi TT", img: "img3", brand: "Audi", model: "Sports", fuelType: "Petrol", pricePerDay: 200 },
-  { name: "Audi R8", img: "img4", brand: "Audi", model: "Sports", fuelType: "Petrol", pricePerDay: 300 },
-  { name: "Audi q5", img: "img5", brand: "Audi", model: "Suvs", fuelType: "Diesel", pricePerDay: 180 },
+  { name: "Audi a3",   img:"/cars/Audi-a3img3.jpg", brand: "Audi", model: "Sedans", fuelType: "Petrol", pricePerDay: 120 },
+  { name: "Audi q2", img:"/cars/Audi-a3img1.jpg", brand: "Audi", model: "Suvs", fuelType: "Diesel", pricePerDay: 150 },
+  { name: "Audi TT", img:"/cars/Audi-a3img1.jpg", brand: "Audi", model: "Sports", fuelType: "Petrol", pricePerDay: 200 },
+  { name: "Audi R8", img:"/cars/Audi-a3img1.jpg", brand: "Audi", model: "Sports", fuelType: "Petrol", pricePerDay: 300 },
+  { name: "Audi q5", img:"/cars/Audi-a3img1.jpg", brand: "Audi", model: "Suvs", fuelType: "Diesel", pricePerDay: 180 },
 
-  { name: "Bmw 3", img: "img6", brand: "BMW", model: "Sedans", fuelType: "Petrol", pricePerDay: 130 },
-  { name: "Bmw 7", img: "img7", brand: "BMW", model: "Sedans", fuelType: "Petrol", pricePerDay: 220 },
-  { name: "Bmw x3", img: "img8", brand: "BMW", model: "Suvs", fuelType: "Diesel", pricePerDay: 170 },
-  { name: "Bmw m2", img: "img9", brand: "BMW", model: "Sports", fuelType: "Petrol", pricePerDay: 250 },
+  { name: "Bmw 3", img:"/cars/Audi-a3img1.jpg",brand: "BMW", model: "Sedans", fuelType: "Petrol", pricePerDay: 130 },
+  { name: "Bmw 7", img:"/cars/Audi-a3img1.jpg",brand: "BMW", model: "Sedans", fuelType: "Petrol", pricePerDay: 220 },
+  { name: "Bmw x3", img:"/cars/Audi-a3img1.jpg", brand: "BMW", model: "Suvs", fuelType: "Diesel", pricePerDay: 170 },
+  { name: "Bmw m2", img:"/cars/Audi-a3img1.jpg", brand: "BMW", model: "Sports", fuelType: "Petrol", pricePerDay: 250 },
 
-  { name: "Lamborghini Huracán", img: "img10", brand: "Lamborghini", model: "Sports", fuelType: "Petrol", pricePerDay: 450 },
-  { name: "Lamborghini Revuelto", img: "img11", brand: "Lamborghini", model: "Sports", fuelType: "Petrol", pricePerDay: 500 },
-  { name: "Lamborghini Urus", img: "img12", brand: "Lamborghini", model: "Sports", fuelType: "Petrol", pricePerDay: 400 },
+  { name: "Lamborghini Huracán", img: "/cars/Audi-a3img1.jpg",brand: "Lamborghini", model: "Sports", fuelType: "Petrol", pricePerDay: 450 },
+  { name: "Lamborghini Revuelto", img:"/cars/Audi-a3img1.jpg", brand: "Lamborghini", model: "Sports", fuelType: "Petrol", pricePerDay: 500 },
+  { name: "Lamborghini Urus",     img:"/cars/Audi-a3img1.jpg", brand: "Lamborghini", model: "Sports", fuelType: "Petrol", pricePerDay: 400 },
 ];
 
 

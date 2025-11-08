@@ -39,19 +39,3 @@ export const Slide =[
     },
 ]
 
-export const cars =[
-    {id:1, name:"Audi a3", img: "img1", brand:"Audi", model:"Sedans", fuel:"Petrol" },
-    {id:2, name: "Audi q2", img: "img2", brand: "Audi",model:"Suvs", fuel:"Disel"},
-    {id:3, name:"Audi TT", img:"img3", brand:"Audi", model:"Sports", fuel:"petrol"},
-    {id:4, name:"Audi R8", img:"img4", brand:"Audi", model:"Sports", fuel:"petrol"},
-    {id:5,name:"Audi q5", img:"img5", brand:"Audi",  model: "Suvs", fuel:"Disel"},
-
-    {id:6, name:"Bmw 3", img:"img6", brand:"bmw", model:"Sedans", fuel:"petrol"},
-    {id:7, name:"Bmw 7", img:"img7", brand:"bmw", model:"Sedans", fuel:"petrol"},
-    {id:8, name:"Bmw x3", img:"img8",brand:"bmw", model:"Suvs", fuel:"Disel"},
-    {id:9, name:"Bmw m2", img:"img9", brand:"bmw",model:"Sports", fuel:"petrol"},
-
-    {id:10, name:"Lamborghini Huracán", img:"img10", brand:"Lamborghini", model:"Sports", fuel:"petrol"},
-    {id:11, name:"Lamborghini Revuelto",img:"img11", brand:"Lamborghini", model:"Sports",fuel:"petrol"},
-    {id:12, name:"Lamborghini urus",    img:"img12", brand:"Lamborghini", model:"Sports",fuel:"petrol"}
-]
