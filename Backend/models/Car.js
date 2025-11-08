@@ -29,6 +29,6 @@ const carschema = new mongoose.Schema({
       type: Boolean,
       default: true,
     },
-}, {timestamps})
+}, {timestamps: true})
 
 export default mongoose.model("Car", carschema)
