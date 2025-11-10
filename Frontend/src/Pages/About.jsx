@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 import { assets } from '../assets/assets'
+import { FaHome} from 'react-icons/fa'
 import gsap from "gsap"
 import { ScrollTrigger} from 'gsap/ScrollTrigger'
 import {TextPlugin} from 'gsap/TextPlugin'
@@ -42,9 +43,17 @@ useEffect(()=>{
 },[])
 
   return (
-    <section>    
+    <section>   
         <div className='w-full bg-[#F2E3BC]  text-white py-4  border-4 border-black px-5'>
-      <div className='flex flex-col md:flex-row items-center justify-between '>
+             <div className='mt-4 flex justify-center items-center gap-2 mb-4  ' >
+        
+          <FaHome size={20} color='gray'/>
+        
+        <h3 className='text-sm text-gray-500 font-bold text-center   italic '> Home |</h3>
+     <h3 className='text-sm text-black font-bold text-center   italic underline-offset-4 decoration-2 underline '> About us</h3>
+      </div>
+      {/* heroSection */}
+      <div className='flex flex-col md:flex-row items-center justify-between mt-6 '>
          {/* left */}
          <div className='w-full flex flex-col items-center justify-center text-left  px-4 md:w-1/2 gap-2' ref={textref} >
         <p className="font-bold text-sm mb-4 text-black uppercase tracking-wide">
@@ -60,7 +69,7 @@ useEffect(()=>{
      {/* right */}
      
  <div className='w-full flex md:flex-col items-center justify-center   px-4 md:w-1/2 gap-2 flex-col-reverse'>
-          <img src={assets.luxury_img} alt="" className='w-full shadow-lg' />
+          <img src={assets.luxury_img} alt="" className='w-full shadow-lg mt-2' />
          </div>
  </div>
 {/* second box */}
@@ -73,8 +82,8 @@ useEffect(()=>{
          </div>
               {/* left */}
          <div className='w-full flex flex-col items-center justify-center text-left  px-4 md:w-1/2 gap-2'>
- <p className="font-bold text-sm mb-4 text-black uppercase tracking-wide">
-              Enjoy with us
+ <p className="h-1 bg-amber-500 w-full mt-2 ">
+              
             </p>
           <h3 className="text-3xl md:text-5xl font-bold text-black leading-snug mb-6">
               Drive Your Journey <br /> Anytime, AnyWhere <br /> Feel The Luxury
@@ -83,8 +92,7 @@ useEffect(()=>{
          </div>
  </div>
     </div>
-    
-     <div  >
+    <div  >
 
      </div>
     </section>
