@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Oswald:wght@200..700&family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
 @import "tailwindcss";
 
 @theme {
   --font-outfit: "Outfit", sans-serif;
   --font-oswald: "Oswald", sans-serif;
+  --font-dancing: "Dancing", cursive;
   
 }
 .slider-track {

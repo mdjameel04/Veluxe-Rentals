@@ -9,7 +9,7 @@ export default {
       fontFamily: {
         outfit: ['Outfit', 'sans-serif'],
         oswald: ['Oswald', 'sans-serif'],
-      
+       dancing: ['"Dancing Script"', 'cursive'],
       },
     },
   },

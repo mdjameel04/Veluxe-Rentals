@@ -7,6 +7,7 @@ import Carbooking from './Pages/Carbooking'
 import Home from './Pages/Home'
 import Sigin from './Pages/Sigin'
 import Login from './Pages/Login'
+import About from './Pages/About'
 
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
       <Route path="/"  element={<Home/>}/>
       <Route  path="/booking" element={<Carbooking/>} />
       <Route path= "/signin" element={<Sigin/>} />
+      <Route path= "/about" element={<About/>} />
       <Route path= "/login" element={<Login/>} />
 
     </Routes>

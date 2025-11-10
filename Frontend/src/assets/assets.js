@@ -6,6 +6,8 @@ import right from './Right-arrow.png'
 import car_img1 from './car-img1.webp'
 import car_img2 from './Car-img2.webp'
 import car_img3 from './car-img4.png'
+import luxury_img from './luxury-img.jpeg'
+import luxury_img2 from './luxury-img2.jpg'
 import rightSide_img from './Right-img.webp'
 import Sigin from './Sigin.png'
 import login from './login.png'
@@ -18,6 +20,8 @@ export const assets = {
     car_img1,
     car_img2,
     car_img3,
+  luxury_img,
+  luxury_img2,
     rightSide_img, 
     Sigin,login
 
