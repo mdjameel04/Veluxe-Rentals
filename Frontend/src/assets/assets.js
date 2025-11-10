@@ -11,6 +11,7 @@ import luxury_img2 from './luxury-img2.jpg'
 import rightSide_img from './Right-img.webp'
 import Sigin from './Sigin.png'
 import login from './login.png'
+import Agent_img from './Agent-img.png'
 export const assets = {
     video1,
     Logo,
@@ -23,6 +24,7 @@ export const assets = {
   luxury_img,
   luxury_img2,
     rightSide_img, 
+    Agent_img,
     Sigin,login
 
 }
@@ -30,9 +32,9 @@ export const assets = {
 export const NavItems =[
     {name : "Home",path: "/" },
     {name : "CarBooking",path: "/booking" },
+    {name : "About Us",path: "/about" },
     {name : "Fleet",path: "/fleet" },
     {name : "Contact",path: "/Contact" },
-    {name : "About Us",path: "/about" }
 
 ]
 
