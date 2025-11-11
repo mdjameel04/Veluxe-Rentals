@@ -32,7 +32,7 @@ const Contact = () => {
             <div className="p-6 border border-gray-200 rounded-xl shadow-sm bg-white">
               <h3 className="font-semibold text-lg mb-2">Chat to support</h3>
               <p className="text-sm text-gray-600 mb-1">Speak to our friendly team.</p>
-              <p className="font-medium text-sm">EliteFurny@gmail.com</p>
+              <p className="font-medium text-sm">veluxe@gmail.com</p>
             </div>
 
             <div className="p-6 border border-gray-200 rounded-xl shadow-sm bg-white">
@@ -45,7 +45,7 @@ const Contact = () => {
               <FaMapMarkerAlt className="text-2xl text-amber-600" />
               <div>
                 <h3 className="font-semibold text-lg mb-1">Visit us</h3>
-                <p className="text-sm text-gray-600">No. 21, budvel, hyderabad</p>
+                <p className="text-sm text-gray-600">banjara hills , hyderabad</p>
               </div>
             </div>
 
