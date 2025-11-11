@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { FaFlagCheckered, FaCarSide, FaLeaf } from "react-icons/fa";
 import gsap from "gsap";
 import {ScrollTrigger} from "gsap/ScrollTrigger"
+import { assets } from "../assets/assets";
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -40,7 +41,7 @@ const tl =gsap.context(()=>{
 },[])
 
   return (
-    <section ref={sectionRef}  className="bg-[#FBF5F3] py-16">
+    <section ref={sectionRef}  className="mission-title  bg-[#FBF5F3] py-16">
       <div className="max-w-6xl mx-auto px-6 text-center" >
         {/* Title */}
         <h2  className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -89,9 +90,70 @@ const tl =gsap.context(()=>{
           </div>
         </div>
       </div>
+
+    <div className="bg-[#D3D5D7] px-8 py-16">
+  <div className="w-full flex flex-col md:flex-row items-center justify-center gap-8 md:w-4/5 mx-auto">
+    
+    {/* Left Section - Why Choose Us */}
+    <div className="flex flex-col w-full md:w-1/2 gap-6">
+      <h2 className="text-3xl font-bold text-gray-900 text-center md:text-left mb-4">
+        Why Choose Us
+      </h2>
+
+      <div className="flex flex-col gap-4">
+        <div className="flex items-start gap-3">
+          <img src={assets.Logo} alt="Icon 1" className="w-10 h-10"/>
+          <p className="text-black font-medium leading-relaxed">
+            **Premium Fleet:** Drive from a wide range of luxury and well-maintained cars.
+          </p>
+        </div>
+
+        <div className="flex items-start gap-3">
+          <img src={assets.Logo} alt="Icon 2" className="w-10 h-10"/>
+          <p className="text-black font-medium leading-relaxed">
+            **Seamless Booking:** Fast, easy, and hassle-free booking experience.
+          </p>
+        </div>
+
+        <div className="flex items-start gap-3">
+          <img src={assets.Logo} alt="Icon 3" className="w-10 h-10"/>
+          <p className="text-black font-medium leading-relaxed">
+            **Affordable Luxury:** Competitive pricing without compromising comfort.
+          </p>
+        </div>
+
+        <div className="flex items-start gap-3">
+          <img src={assets.Logo} alt="Icon 4" className="w-10 h-10"/>
+          <p className="text-black font-medium leading-relaxed">
+            **Sustainability:** Eco-friendly options for a greener journey.
+          </p>
+        </div>
+
+        <div className="flex items-start gap-3">
+          <img src={assets.Logo} alt="Icon 5" className="w-10 h-10"/>
+          <p className="text-black font-medium leading-relaxed">
+            **24/7 Support:** Our team is always ready to assist you anytime.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    {/* Right Section - Image */}
+    <div className="w-full md:w-1/2 flex items-center justify-center">
+      <img src={assets.luxury_img} alt="Luxury Car" className="w-full shadow-lg rounded-lg" />
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
     </section>
   );
 };
 
 export default Mission;
+
 
