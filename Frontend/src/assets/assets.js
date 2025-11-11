@@ -11,6 +11,12 @@ import luxury_img2 from './luxury-img2.jpg'
 import rightSide_img from './Right-img.webp'
 import Sigin from './Sigin.png'
 import login from './login.png'
+import booking from './booking.png'
+import comfort from './car-seat.png'
+import carIcon from './car.png'
+import Support24 from './24-hours.png'
+import eco_friendly from './Eco-friendly.png'
+
 import Agent_img from './Agent-img.png'
 export const assets = {
     video1,
@@ -25,7 +31,8 @@ export const assets = {
   luxury_img2,
     rightSide_img, 
     Agent_img,
-    Sigin,login
+    Sigin,login,
+    booking,comfort,carIcon,Support24,eco_friendly
 
 }
 
