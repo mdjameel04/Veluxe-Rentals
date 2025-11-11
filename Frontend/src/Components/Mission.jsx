@@ -12,7 +12,7 @@ const Mission = () => {
 const sectionRef = useRef(null)
 const cardRef = useRef(null)
 useEffect(()=>{
-const tl =gsap.context(()=>{
+const ctx =gsap.context(()=>{
     gsap.from(".mission-title", {
         opacity:0,
         y: 50,
@@ -102,35 +102,35 @@ const tl =gsap.context(()=>{
 
       <div className="flex flex-col gap-4">
         <div className="flex items-start gap-3">
-          <img src={assets.Logo} alt="Icon 1" className="w-10 h-10"/>
+          <img src={assets.carIcon} alt="Icon 1" className="w-10 h-10"/>
           <p className="text-black font-medium leading-relaxed">
             **Premium Fleet:** Drive from a wide range of luxury and well-maintained cars.
           </p>
         </div>
 
         <div className="flex items-start gap-3">
-          <img src={assets.Logo} alt="Icon 2" className="w-10 h-10"/>
+          <img src={assets.booking} alt="Icon 2" className="w-10 h-10"/>
           <p className="text-black font-medium leading-relaxed">
             **Seamless Booking:** Fast, easy, and hassle-free booking experience.
           </p>
         </div>
 
         <div className="flex items-start gap-3">
-          <img src={assets.Logo} alt="Icon 3" className="w-10 h-10"/>
+          <img src={assets.comfort} alt="Icon 3" className="w-10 h-10"/>
           <p className="text-black font-medium leading-relaxed">
             **Affordable Luxury:** Competitive pricing without compromising comfort.
           </p>
         </div>
 
         <div className="flex items-start gap-3">
-          <img src={assets.Logo} alt="Icon 4" className="w-10 h-10"/>
+          <img src={assets.eco_friendly} alt="Icon 4" className="w-10 h-10"/>
           <p className="text-black font-medium leading-relaxed">
             **Sustainability:** Eco-friendly options for a greener journey.
           </p>
         </div>
 
         <div className="flex items-start gap-3">
-          <img src={assets.Logo} alt="Icon 5" className="w-10 h-10"/>
+          <img src={assets.Support24} alt="Icon 5" className="w-10 h-10"/>
           <p className="text-black font-medium leading-relaxed">
             **24/7 Support:** Our team is always ready to assist you anytime.
           </p>
@@ -139,8 +139,8 @@ const tl =gsap.context(()=>{
     </div>
 
     {/* Right Section - Image */}
-    <div className="w-full md:w-1/2 flex items-center justify-center">
-      <img src={assets.luxury_img} alt="Luxury Car" className="w-full shadow-lg rounded-lg" />
+    <div className="w-full  md:w-1/2 flex items-center justify-center">
+      <img src={assets.luxury_img2} alt="Luxury Car" className="w-full shadow-lg rounded-lg" />
     </div>
 
   </div>
