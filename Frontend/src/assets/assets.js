@@ -16,7 +16,7 @@ import comfort from './car-seat.png'
 import carIcon from './car.png'
 import Support24 from './24-hours.png'
 import eco_friendly from './Eco-friendly.png'
-
+import contact_img from './Lamborgini-img.jpg'
 import Agent_img from './Agent-img.png'
 export const assets = {
     video1,
@@ -32,7 +32,8 @@ export const assets = {
     rightSide_img, 
     Agent_img,
     Sigin,login,
-    booking,comfort,carIcon,Support24,eco_friendly
+    booking,comfort,carIcon,Support24,eco_friendly,
+    contact_img
 
 }
 

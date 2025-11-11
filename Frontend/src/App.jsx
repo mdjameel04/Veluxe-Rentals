@@ -8,6 +8,7 @@ import Home from './Pages/Home'
 import Sigin from './Pages/Sigin'
 import Login from './Pages/Login'
 import About from './Pages/About'
+import Contact from './Pages/Contact'
 
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
       <Route path= "/signin" element={<Sigin/>} />
       <Route path= "/about" element={<About/>} />
       <Route path= "/login" element={<Login/>} />
+      <Route path='/Contact' element={<Contact/>}/>
 
     </Routes>
 
