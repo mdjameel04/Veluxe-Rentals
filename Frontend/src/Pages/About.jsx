@@ -4,6 +4,7 @@ import { FaHome} from 'react-icons/fa'
 import gsap from "gsap"
 import { ScrollTrigger} from 'gsap/ScrollTrigger'
 import {TextPlugin} from 'gsap/TextPlugin'
+import Mission from '../Components/Mission'
 
 gsap.registerPlugin(TextPlugin)
 gsap.registerPlugin(ScrollTrigger)
@@ -178,6 +179,7 @@ useEffect(() => {
       </div>
     </div>
 
+<Mission/>
      
     </section>
   )
