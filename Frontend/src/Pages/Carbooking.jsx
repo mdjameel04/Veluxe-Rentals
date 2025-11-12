@@ -133,7 +133,7 @@ const Carbooking = () => {
     <h2 className="text-3xl font-bold mb-8 text-gray-800">What Our Customers Say</h2>
     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
       {[
-        { name: "Amit Sharma", text: "The BMW X5 was in perfect condition. Service was smooth and professional." },
+        { name: "Swamy ", text: "The BMW X5 was in perfect condition. Service was smooth and professional." },
         { name: "Sophia Rao", text: "Loved the luxury experience! Booking was super easy and fast." },
         { name: "Rahul Mehta", text: "Best rental experience in Hyderabad! Highly recommended." },
       ].map((review, index) => (
