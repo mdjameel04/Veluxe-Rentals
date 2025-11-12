@@ -27,7 +27,7 @@ const Footer = () => {
 <div className='flex items-center justify-center gap-4'>
 <input type="text" name='email' placeholder='Enter your Email' className='w-full border-2 border-gray-300 rounded-xl py-2 px-6 focus:ring-2 focus:ring-[#FF6B6B] focus:outline-none transition-all duration-200 ease-linear'/>
 <div>
-    <button className=' font-outfit px-4 py-2 bg-red-600 rounded-2xl shadow-2xl hover:bg-gray-600 text-amber-400'>Subscribe </button>
+    <button className=' font-outfit px-4 py-2 bg-red-600 rounded-2xl shadow-2xl hover:bg-gray-600 text-amber-400' type='submit'>Subscribe </button>
 </div>
 </div>
   </div>
@@ -66,7 +66,9 @@ const Footer = () => {
           <p className="text-white/60 text-sm hover:text-white cursor-pointer">Terms & Conditions</p>
         </div>
                 <div className="flex flex-col gap-2">
+     <Link to={"/Contact"}>
           <h3 className="text-white text-md font-semibold mb-2">Contact</h3>
+     </Link>
           <p className="text-white/60 text-sm  hover:text-white">📍 hyderabad, India</p>
           <p className="text-white/60 text-sm  hover:text-white">📞 +91 7013684532</p>
           <p className="text-white/60 text-sm  hover:text-white">✉️ support@veluxerentals.com</p>

@@ -4,7 +4,7 @@ import { assets } from '../assets/assets';
 
 const Carbooking = () => {
   const [cars, setCars] = useState([]);
-  const [selectedBrand, setSelectedBrand] = useState('');
+  const [selectedBrand, setSelectedBrand] = useState('Audi');
   const [selectedModel, setSelectedModel] = useState('');
   const [loading, setLoading] = useState(true);
 
@@ -125,6 +125,45 @@ const Carbooking = () => {
           </div>
         </div>
       </div>
+{/* how its work  */}
+<div className="bg-gray-100 py-16 mt-12">
+  <div className="max-w-6xl mx-auto px-4 text-center">
+    <h2 className="text-3xl font-bold mb-8 text-gray-800">What Our Customers Say</h2>
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      {[
+        { name: "Amit Sharma", text: "The BMW X5 was in perfect condition. Service was smooth and professional." },
+        { name: "Sophia Rao", text: "Loved the luxury experience! Booking was super easy and fast." },
+        { name: "Rahul Mehta", text: "Best rental experience in Hyderabad! Highly recommended." },
+      ].map((review, index) => (
+        <div key={index} className="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+          <p className="text-gray-600 mb-4">“{review.text}”</p>
+          <h4 className="font-semibold text-gray-800">{review.name}</h4>
+        </div>
+      ))}
+    </div>
+  </div>
+</div>
+
+{/* choose us  */}
+      <div className="bg-black text-white py-16 ">
+  <div className="max-w-6xl mx-auto px-4 text-center">
+    <h2 className="text-3xl font-bold mb-10">How It Works</h2>
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div>
+        <h3 className="text-xl font-semibold mb-2 text-red-400">1. Choose Your Car</h3>
+        <p className="text-gray-400">Browse our luxury fleet and pick your dream ride.</p>
+      </div>
+      <div>
+        <h3 className="text-xl font-semibold mb-2 text-red-400">2. Book Instantly</h3>
+        <p className="text-gray-400">Reserve online in seconds with easy payment options.</p>
+      </div>
+      <div>
+        <h3 className="text-xl font-semibold mb-2 text-red-400">3. Drive in Style</h3>
+        <p className="text-gray-400">We deliver your car or you can pick it up — enjoy the experience!</p>
+      </div>
+    </div>
+  </div>
+</div>
     </section>
   );
 };
