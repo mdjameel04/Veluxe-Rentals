@@ -91,7 +91,7 @@ const ctx =gsap.context(()=>{
         </div>
       </div>
 
-    <div className="bg-[#D3D5D7] px-8 py-16">
+    <div className="bg-[#FBF5F3] px-8 py-16">
   <div className="w-full flex flex-col md:flex-row items-center justify-center gap-8 md:w-4/5 mx-auto">
     
     {/* Left Section - Why Choose Us */}
@@ -100,7 +100,7 @@ const ctx =gsap.context(()=>{
         Why Choose Us
       </h2>
 
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-4 px-4 py-8 rounded-lg hover:shadow-2xl hover:scale-z-100">
         <div className="flex items-start gap-3">
           <img src={assets.carIcon} alt="Icon 1" className="w-10 h-10"/>
           <p className="text-black font-medium leading-relaxed">
@@ -139,8 +139,8 @@ const ctx =gsap.context(()=>{
     </div>
 
     {/* Right Section - Image */}
-    <div className="w-full  md:w-1/2 flex items-center justify-center">
-      <img src={assets.luxury_img2} alt="Luxury Car" className="w-full shadow-lg rounded-lg" />
+    <div className="w-full  md:w-1/2 flex items-center justify-center  ">
+      <img src={assets.contact_img} alt="Luxury Car" className="w-full shadow-lg rounded-lg" />
     </div>
 
   </div>
