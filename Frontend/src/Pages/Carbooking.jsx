@@ -83,7 +83,7 @@ const Carbooking = () => {
             >
               <option value="">All Brand</option>
               <option value="Audi">Audi</option>
-              <option value="bmw">Bmw</option>
+              <option value="BMW">BMW</option>
               <option value="Lamborghini">Lamborghini</option>
             </select>
 
@@ -112,6 +112,8 @@ const Carbooking = () => {
                     src={car.img}
                     alt={car.name}
                     className="w-full h-40 object-cover rounded-md mb-2"
+                    
+
                   />
                   <h2 className="text-lg font-semibold">{car.name}</h2>
                   <p className="text-gray-600">

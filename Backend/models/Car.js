@@ -21,10 +21,8 @@ const carschema = new mongoose.Schema({
     pricePerDay:{type: Number, 
     required: true 
     },
-    images: {
-      type: [String], // array of image URLs
-      required: true,
-    },
+
+   img: { type: String, required: true },
     available: {
       type: Boolean,
       default: true,
