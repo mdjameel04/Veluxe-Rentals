@@ -9,6 +9,7 @@ import Sigin from './Pages/Sigin'
 import Login from './Pages/Login'
 import About from './Pages/About'
 import Contact from './Pages/Contact'
+import Footer from './Components/Footer'
 
 
 const App = () => {
@@ -25,7 +26,7 @@ const App = () => {
 
     </Routes>
 
-
+  <Footer/>
     </div>
     
   )
