@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { Slide } from "../assets/assets";
+import { assets, Slide } from "../assets/assets";
 import { Link } from "react-router-dom";
-import "../index.css"; // make sure this CSS is imported
+import { FaGooglePlay } from "react-icons/fa";
+
 
 const Models = () => {
   const [count, setCount] = useState(0);
@@ -65,7 +66,7 @@ const Models = () => {
           →
         </button>
 
-       <div className="relative flex items-center justify-center gap-4 uppercase mt-4"> 
+       <div className="relative flex items-center justify-center gap-4 uppercase mt-4 mb-4"> 
        <button className="bg-[#ffc000] py-3 px-6 rounded-lg transition-all duration-500  text-black  hover:bg-black/30">
         start configuration → 
        </button>
@@ -76,6 +77,59 @@ const Models = () => {
        </Link>
        </div>
       </div>
+      {/* featuer */}
+<div className="bg-amber-200 px-16 py-8">
+  <h2 className="text-2xl font-bold text-black text-center">
+    Drive Your Way, <br /> Anytime, Anywhere
+  </h2>
+
+  <div className="flex items-center justify-center gap-4 mt-4 flex-wrap">
+    <button className="text-sm text-black font-bold bg-amber-100 px-4 py-2 rounded-2xl hover:bg-black hover:text-white">
+      Scan Payments
+    </button>
+    <button className="text-sm text-black font-bold bg-amber-100 px-2 py-2 rounded-2xl hover:bg-black hover:text-white">
+      Advance Tracking
+    </button>
+    <button className="text-sm text-black font-bold bg-amber-100 px-4 py-2 rounded-2xl hover:bg-black hover:text-white">
+      Personal Experience
+    </button>
+    <button className="text-sm text-black font-bold bg-amber-100 px-4 py-2 rounded-2xl hover:bg-black hover:text-white">
+      Real-time Assistance
+    </button>
+  </div>
+
+  {/* Section with image on left and text on right */}
+  <div className="w-full  flex flex-col md:flex-row items-center justify-center mt-8 gap-8">
+    {/* left side - image */}
+    <div className="w-full md:w-1/2">
+      <img
+        src={assets.mobile_map}
+        alt="map preview"
+        className="rounded-2xl shadow-lg w-full object-cover"
+      />
+    </div>
+
+    {/* right side - text */}
+    <div className="w-full md:w-1/2 text-center md:text-left">
+      <p className="text-black leading-relaxed font-bold ">
+       Multiple payments Options Credit card, digital wallets , or bank transfer. Transparent pricing view detailed costs with no hidden fees. Loyalty points integration Redeem discounts and rewards during checkout.
+      </p>
+      <div className="flex items-center justify-center gap-2 mt-4">
+      <div className="flex items-center justify-center gap-2">
+      <button className="bg-orange-600 px-4 py-2 rounded-2xl font-medium text-white">  playstore</button>
+      </div>
+ <div>
+      <button className="bg-orange-600 px-4 py-2 rounded-2xl font-medium text-white  " > playstore</button>
+      </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+     
+
+
     </section>
   );
 };
