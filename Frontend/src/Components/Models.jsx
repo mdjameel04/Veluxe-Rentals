@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Slide } from "../assets/assets";
+import { Link } from "react-router-dom";
 import "../index.css"; // make sure this CSS is imported
 
 const Models = () => {
@@ -68,12 +69,12 @@ const Models = () => {
        <button className="bg-[#ffc000] py-3 px-6 rounded-lg transition-all duration-500  text-black  hover:bg-black/30">
         start configuration → 
        </button>
+       <Link to={'/booking'}>
        <button className=" border-2 border-black py-3 px-6 rounded-lg transition-all duration-500  text-white bg-black/20 ">
         Explore car → 
        </button>
+       </Link>
        </div>
-
-
       </div>
     </section>
   );
