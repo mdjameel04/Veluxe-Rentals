@@ -3,6 +3,7 @@ import { FaFacebook } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { BsLinkedin } from "react-icons/bs";
+import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
     <section className='w-full bg-gray-800 py-16 px-8'>
@@ -36,11 +37,20 @@ const Footer = () => {
      {/* bottom Headline */}
       <div className='flex items-start justify-evenly gap-4 flex-wrap mt-4'>
        <div className='flex flex-col  gap-2 '>
+        
      <h3 className='text-white text-md font-semibold'> Veluxe Rentals</h3>
+     <Link to={'/'}>
        <p className='text-white/50 text-sm hover:text-white hover:font-bold'> Home</p>
+     </Link>
+     <Link to={"/booking"}>
        <p className='text-white/50 text-sm hover:text-white hover:font-bold'> Bookings</p>
+     </Link>
+     <Link to={"/about"}>
        <p className='text-white/50 text-sm hover:text-white hover:font-bold'> About Us</p>
+     </Link>
+     <Link to={"/Contact"}>
        <p className='text-white/50 text-sm hover:text-white hover:font-bold'> Contact Us</p>
+     </Link>
  </div>
            <div className="flex flex-col gap-2">
           <h3 className="text-white text-md  font-semibold mb-2">Services</h3>
