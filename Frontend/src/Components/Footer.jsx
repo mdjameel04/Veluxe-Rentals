@@ -19,13 +19,50 @@ const Footer = () => {
       </div>
   </div>
   <div className='w-0.5 h-44 bg-amber-50'></div>
-
-  <div className='flex flex-col justify-center items-center text-white gap-3'>
+{/* right side */}
+  <div className='flex flex-col justify-center items-center text-white gap-2'>
   <h2 className='text-2xl font-bold mb-4'>Get Exclusive Discount on Luxury Cars </h2>
   <p>Subscribe to our Veluxe Rentals to receive Special offers,  </p>
+<div className='flex items-center justify-center gap-4'>
+<input type="text" name='email' placeholder='Enter your Email' className='w-full border-2 border-gray-300 rounded-xl py-2 px-6 focus:ring-2 focus:ring-[#FF6B6B] focus:outline-none transition-all duration-200 ease-linear'/>
+<div>
+    <button className=' font-outfit px-4 py-2 bg-red-600 rounded-2xl shadow-2xl hover:bg-gray-600 text-amber-400'>Subscribe </button>
+</div>
+</div>
   </div>
-      </div>
+      </div> 
       <div className='w-full h-0.5 bg-amber-50 mt-2'></div>
+
+     {/* bottom Headline */}
+      <div className='flex items-start justify-evenly gap-4 flex-wrap mt-4'>
+       <div className='flex flex-col  gap-2 '>
+     <h3 className='text-white text-md font-semibold'> Veluxe Rentals</h3>
+       <p className='text-white/50 text-sm hover:text-white hover:font-bold'> Home</p>
+       <p className='text-white/50 text-sm hover:text-white hover:font-bold'> Bookings</p>
+       <p className='text-white/50 text-sm hover:text-white hover:font-bold'> About Us</p>
+       <p className='text-white/50 text-sm hover:text-white hover:font-bold'> Contact Us</p>
+ </div>
+           <div className="flex flex-col gap-2">
+          <h3 className="text-white text-md  font-semibold mb-2">Services</h3>
+          <p className="text-white/60 text-sm hover:text-white cursor-pointer">Bookings</p>
+          <p className="text-white/60 text-sm hover:text-white cursor-pointer">Luxury Cars</p>
+          <p className="text-white/60 text-sm hover:text-white cursor-pointer">Special Offers</p>
+        </div>
+
+           <div className="flex flex-col gap-2">
+          <h3 className="text-white text-md font-semibold mb-2">Support</h3>
+          <p className="text-white/60 text-sm hover:text-white cursor-pointer">FAQ</p>
+          <p className="text-white/60 text-sm hover:text-white cursor-pointer">Privacy Policy</p>
+          <p className="text-white/60 text-sm hover:text-white cursor-pointer">Terms & Conditions</p>
+        </div>
+                <div className="flex flex-col gap-2">
+          <h3 className="text-white text-md font-semibold mb-2">Contact</h3>
+          <p className="text-white/60 text-sm  hover:text-white">📍 hyderabad, India</p>
+          <p className="text-white/60 text-sm  hover:text-white">📞 +91 7013684532</p>
+          <p className="text-white/60 text-sm  hover:text-white">✉️ support@veluxerentals.com</p>
+        </div>
+      
+      </div>
     </section>
   )
 }
