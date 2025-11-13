@@ -115,11 +115,12 @@ const Models = () => {
        Multiple payments Options Credit card, digital wallets , or bank transfer. Transparent pricing view detailed costs with no hidden fees. Loyalty points integration Redeem discounts and rewards during checkout.
       </p>
       <div className="flex items-center justify-center gap-2 mt-4">
-      <div className="flex items-center justify-center gap-2">
-      <button className="bg-orange-600 px-4 py-2 rounded-2xl font-medium text-white">  playstore</button>
+      <div>
+    
+      <button className=" bg-orange-600 px-4 py-2 rounded-2xl font-medium text-white">  playstore</button>
       </div>
  <div>
-      <button className="bg-orange-600 px-4 py-2 rounded-2xl font-medium text-white  " > playstore</button>
+      <button className="bg-orange-600 px-4 py-2 rounded-2xl font-medium text-white  " > Applestore</button>
       </div>
 
       </div>
