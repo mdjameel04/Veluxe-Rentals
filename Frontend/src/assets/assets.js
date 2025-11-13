@@ -19,6 +19,7 @@ import eco_friendly from './Eco-friendly.png'
 import contact_img from './Lamborgini-img.jpg'
 import Agent_img from './Agent-img.png'
 import mobile_map from './location.jpg'
+import Audi_tt from './Audi-TTimg2.jpg'
 export const assets = {
     video1,
     Logo,
@@ -34,7 +35,7 @@ export const assets = {
     Agent_img,
     Sigin,login,
     booking,comfort,carIcon,Support24,eco_friendly,
-    contact_img, mobile_map
+    contact_img, mobile_map, Audi_tt
 
 }
 

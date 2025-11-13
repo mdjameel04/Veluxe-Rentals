@@ -127,8 +127,54 @@ const Models = () => {
     </div>
   </div>
 </div>
-
+{/* info */}
      
+<div className="w-full bg-white px-8 md:px-16 py-12">
+  <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+    
+    {/* LEFT SIDE - TEXT CONTENT */}
+    <div className="w-full md:w-1/2">
+      <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 leading-snug mb-3">
+        Keys to freedom, <br /> wheels to adventure.
+      </h2>
+
+      <p className="text-gray-600 mb-6 leading-relaxed text-sm md:text-base">
+        Discover the freedom to travel on your terms with our reliable and affordable car rental services.
+        Whether you are exploring the city, we offer a wide range of vehicles to suit your needs.
+      </p>
+
+      <ul className="space-y-2">
+        <li className="text-sm md:text-base text-gray-600 hover:text-black cursor-pointer">
+          ➤ Flexible Booking Options
+        </li>
+        <li className="text-sm md:text-base text-gray-900 font-semibold hover:text-black cursor-pointer">
+          ➤ Luxury and Comfort
+        </li>
+        <li className="text-sm md:text-base text-gray-600 hover:text-black cursor-pointer">
+          ➤ 24/7 Roadside Assistance
+        </li>
+        <li className="text-sm md:text-base text-gray-600 hover:text-black cursor-pointer">
+          ➤ Affordable Pricing
+        </li>
+        <li className="text-sm md:text-base text-gray-600 hover:text-black cursor-pointer">
+          ➤ Loyalty Rewards Program
+        </li>
+        <li className="text-sm md:text-base text-gray-600 hover:text-black cursor-pointer">
+          ➤ One-Way Rentals
+        </li>
+      </ul>
+    </div>
+
+    {/* RIGHT SIDE - IMAGE */}
+    <div className="w-full md:w-1/2 flex justify-center">
+      <img
+        src={assets.Audi_tt}  // Replace with your image asset
+        alt="Luxury Car"
+        className="w-full  object-contain"
+      />
+    </div>
+  </div>
+</div>
 
 
     </section>
