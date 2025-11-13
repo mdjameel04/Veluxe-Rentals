@@ -3,6 +3,7 @@ import { assets } from '../assets/assets'
 import { TextPlugin } from 'gsap/TextPlugin'
 import { useEffect, useRef } from 'react'
 import Models from '../Components/Models'
+import { Link } from 'react-router-dom'
 
 
 gsap.registerPlugin(TextPlugin)
@@ -48,10 +49,12 @@ t1.fromTo(textref.current,{ opacity:0, y:40},
         <p className="font-outfit mt-4 text-base sm:text-lg md:text-xl text-gray-300 max-w-[90%]" ref={subText}>
         
         </p>
+        <Link to={'/about'}>
         <button className='relative mt-8 px-8 py-3 overflow-hidden rounded-xl border border-white/30 text-white backdrop-blur-md transition-all duration-500 ease-in-out group '>
         <span className='relative z-10'> Discover More</span>
         <span className='absolute inset-0 bg-linear-to-r from-pink-500/60 to-purple-600/60 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500 ease-in-out'></span>
         </button>
+              </Link>
 
       </div>  
      </div> 
