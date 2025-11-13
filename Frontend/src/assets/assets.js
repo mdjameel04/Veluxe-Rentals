@@ -43,15 +43,12 @@ export const NavItems =[
     {name : "Home",path: "/" },
     {name : "CarBooking",path: "/booking" },
     {name : "About Us",path: "/about" },
-    {name : "Fleet",path: "/fleet" },
     {name : "Contact",path: "/Contact" },
-
 ]
 
 export const Slide =[
     {id:1 , img: car_img1, text: "BEYOND THE CONCRETE"},
     {id:2 , img: car_img2, text: "PURE PERFORMANCE" },
-    {id:3 , img: car_img3, text: "DRIVE YOUR DREAMS"
-    },
+    {id:3 , img: car_img3, text: "DRIVE YOUR DREAMS"},    
 ]
 

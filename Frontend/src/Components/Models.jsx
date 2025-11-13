@@ -15,12 +15,12 @@ const Models = () => {
     setCount((prev) => (prev - 1 + Slide.length) % Slide.length);
   };
 
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     setCount((prev) => (prev + 1) % Slide.length);
-  //   }, 4000);
-  //   return () => clearInterval(interval);
-  // }, []);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCount((prev) => (prev + 1) % Slide.length);
+    }, 4000);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <section>

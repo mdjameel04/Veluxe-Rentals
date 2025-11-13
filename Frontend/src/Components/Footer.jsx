@@ -38,8 +38,8 @@ const Footer = () => {
       <div className='flex items-start justify-evenly gap-4 flex-wrap mt-4'>
        <div className='flex flex-col  gap-2 '>
         
-     <h3 className='text-white text-md font-semibold'> Veluxe Rentals</h3>
      <Link to={'/'}>
+     <h3 className='text-white text-md font-semibold cursor-pointer'> Veluxe Rentals</h3>
        <p className='text-white/50 text-sm hover:text-white hover:font-bold'> Home</p>
      </Link>
      <Link to={"/booking"}>
@@ -68,10 +68,10 @@ const Footer = () => {
                 <div className="flex flex-col gap-2">
      <Link to={"/Contact"}>
           <h3 className="text-white text-md font-semibold mb-2">Contact</h3>
-     </Link>
           <p className="text-white/60 text-sm  hover:text-white">📍 hyderabad, India</p>
           <p className="text-white/60 text-sm  hover:text-white">📞 +91 7013684532</p>
           <p className="text-white/60 text-sm  hover:text-white">✉️ support@veluxerentals.com</p>
+     </Link>
         </div>
       
       </div>

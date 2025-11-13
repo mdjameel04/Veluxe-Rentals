@@ -117,12 +117,19 @@ const Carbooking = () => {
                   />
                   <h2 className="text-lg font-semibold">{car.name}</h2>
                   <p className="text-gray-600">
-                    {car.brand} — {car.model} — {car.fuel}
+                    {car.brand} — {car.model} — {car.fuelType}
                   </p>
+                  <div className='flex items-center justify-center gap-2'>
+                    <p> Price per day</p>
+                  <button className='bg-red-500 px-4 py-2 rounded-2xl hover:bg-orange-500  '>{car.pricePerDay} </button>
+                  </div>
                 </div>
               ))
             ) : (
-              <p className="text-center text-gray-500 col-span-full">No cars found.</p>
+           
+               <p className="text-center text-gray-500 col-span-full">No cars found.</p>
+               
+          
             )}
           </div>
         </div>
